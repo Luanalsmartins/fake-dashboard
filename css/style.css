@@ -11,6 +11,30 @@ body {
     display: flex;
 }
 
+.form {
+    background-image: radial-gradient(#adebad, #29a329) ;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+input {
+    padding: 5px;
+}
+
+.campo {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btn-entrar {
+    padding: 10px;
+}
+
 aside {
     width: 200px;
     height: 100vh;
