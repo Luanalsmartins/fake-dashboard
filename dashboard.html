@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-query.css">
     <title>Dashboard</title>
 </head>
 <body>
     <aside>
-        <div class="dashboard">Dashboard</div>
-        <div class="relatorios">Relatórios</div>
-        <div class="config">Configurações</div>
-        <button id="toggle-theme">Dark Mode</button>
+        <p class="person"><span class="material-symbols-outlined icone">person</span> Olá, Luana</p>
+        <div class="opcoes">Dashboard</div>
+        <div class="opcoes">Relatórios</div>
+        <div class="opcoes">Configurações</div>
+        <p id="toggle-theme" class="opcoes"><span class="material-symbols-outlined icone">dark_mode</span></p>
     </aside>
     <main>
         <h1>Dashboard Financeiro</h1>
         <section class="cards">
-            <div class="card saldo"><h3>Saldo: R$ 130.000,00</h3></div>
-            <div class="card receitas"><h3>Receitas: R$ 15.580,00</h3></div>
-            <div class="card despesas"><h3>Despesas: R$ 9.350,00</h3></div>
+            <div class="card saldo"><p>Saldo: <h2>R$ 130.000,00</h2></p></div>
+            <div class="card receitas"><p>Receitas: <h2>R$ 15.580,00</h2></p></div>
+            <div class="card despesas"><p>Despesas: <h2>R$ 9.350,00</h2></p></div>
         </section>
         <section class="tabela">
             <table>

@@ -17,12 +17,44 @@ aside {
     background: #009900;
     color: white;
     font-weight: 600;
-    padding: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 0.3s ease;
+}
+
+.person {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 200;
+}
+
+.icone {
+    padding: 5px;
+}
+
+.opcoes {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.222);
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.opcoes:hover {
+    background-color: #006f00;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#toggle-theme {
+    align-self: flex-start;
 }
 
 main {
     flex: 1;
-    padding: 20px;
+    padding: 25px;
 }
 
 .cards {
@@ -61,8 +93,9 @@ tr:hover {
 }
 
 body.dark {
-    background: #121212;
+    background: #3a3a3a;
     color: white;
+    transition: .2s;
 }
 
 body.dark aside {
@@ -75,4 +108,8 @@ body.dark .card {
 
 body.dark th {
     background: #222;
+}
+
+body.dark tr:hover {
+    background: #4c4c4c;
 }
