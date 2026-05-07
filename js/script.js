@@ -1,12 +1,12 @@
-const entrar = document.querySelector('.btn-entrar')
+const form = document.querySelector('.form')
 const data = document.getElementById('data-atual')
 const toggle = document.getElementById('toggle-theme')
 const ctx = document.getElementById('grafico')
 
 
 // Tela de login
-if (entrar) {
-    entrar.addEventListener('click', function(event) {
+if (form) {
+    form.addEventListener('submit', function(event) {
         event.preventDefault()
 
         window.location.href = 'dashboard.html'
