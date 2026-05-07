@@ -12,15 +12,33 @@ body {
     display: flex;
 }
 
-.form {
-    background-image: radial-gradient(#adebad, #29a329) ;
-    width: 100vw;
+.background-index {
     height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(#d0fdd0, #adebad) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    background: #adebad;
+    border-radius: 10%;
+    box-shadow: 4px 5px 8px rgba(0, 0, 0, 0.202);
+    height: 400px;
+    width: 400px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
+}
+
+div form h2 {
+    text-align: center;
+    color: #007834;
+    padding-bottom: 20px;
 }
 
 input {

@@ -1,34 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Login</title>
-</head>
-<body>
-    <form class="form">
-        <div class="campo campo-email">
+  </head>
+  <body>
+    <div class="background-index">
+        <form class="form">
+            <h2>Olá, digite seu email e senha para fazer login</h2>
+          <div class="campo campo-email">
             Email:
-            <input type="email"
-            name="email"
-            id="iemail"
-            placeholder="Insira seu e-mail"
-            required>
-        </div>
-        <div class="campo campo-senha">
+            <input
+              type="email"
+              name="email"
+              id="iemail"
+              placeholder="Insira seu e-mail"
+              required
+            />
+          </div>
+          <div class="campo campo-senha">
             Senha:
-            <input type="password"
-            name="senha"
-            id="isenha"
-            maxlength="8"
-            placeholder="Digite sua senha"
-            required>
-        </div>
-
-        <button class="btn-entrar">Entrar</button>
-    </form>
+            <input
+              type="password"
+              name="senha"
+              id="isenha"
+              maxlength="8"
+              placeholder="Digite sua senha"
+              required
+            />
+          </div>
+          <button class="btn-entrar">Entrar</button>
+        </form>
+    </div>
 
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
