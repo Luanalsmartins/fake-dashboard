@@ -71,7 +71,7 @@ aside {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    transition: transform 0.3s ease;
+    transition: 0.3s;
 }
 
 .person {
@@ -104,18 +104,27 @@ aside {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
+#toggle-menu {
+    display: none;
+}
+
 main {
     flex: 1;
     padding: 20px;
     min-width: 0;
 }
 
-h1 {
+.title {
     font-size: 36px;
 }
 
-h2 {
-    font-size: 30px;
+.topbar {
+    margin-bottom: 20px;
+}
+
+.topbar p {
+    color: gray;
+    margin-top: 5px;
 }
 
 .cards {

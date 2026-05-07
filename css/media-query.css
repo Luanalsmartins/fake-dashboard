@@ -14,22 +14,28 @@
     aside {
         width: 100%;
         height: auto;
+
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5px;
     }
 
-    .opcoes {
-        height: 20px;
+    .person {
+        padding: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 30px;
+    }
+
+    .texto-menu {
+        display: none;
     }
 
     .card {
         font-size: 15px;
     }
-    
-    .cards {
-        flex-direction: column;
-    }
-
-    h2 {
-        font-size: 20px;
-    }    
 }
-

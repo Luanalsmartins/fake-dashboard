@@ -1,7 +1,10 @@
 const entrar = document.querySelector('.btn-entrar')
+const data = document.getElementById('data-atual')
 const toggle = document.getElementById('toggle-theme')
 const ctx = document.getElementById('grafico')
 
+
+// Tela de login
 if (entrar) {
     entrar.addEventListener('click', function(event) {
         event.preventDefault()
@@ -10,12 +13,21 @@ if (entrar) {
     })
 }
 
-if(toggle) {
+// Data de hoje no Dashboard
+if (data) {
+    const hoje = new Date()
+    
+    data.innerHTML = hoje.toLocaleDateString('pt-BR')
+}
+
+// Dark mode 
+if (toggle) {
     toggle.addEventListener('click', () => {
         document.body.classList.toggle('dark')
     })
 }
 
+// Gráfico
 if (ctx) {
     new Chart(ctx, {
         type: 'bar',
@@ -40,7 +52,24 @@ if (ctx) {
                 legend: {
                     position: 'top'
                 }
+            },
+            title: {
+                display: true,
+                text: 'Receitas x Despesas'
+            },
+            scales: {
+                y: {
+                    grid: {
+                        display: false
+                    }
+                },
+                x: {
+                    grid: {
+                        display: false
+                    }
+                }
             }
+            
         }
     })
 }
