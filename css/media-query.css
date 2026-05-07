@@ -16,6 +16,10 @@
         height: auto;
     }
 
+    .opcoes {
+        height: 20px;
+    }
+
     .card {
         font-size: 15px;
     }

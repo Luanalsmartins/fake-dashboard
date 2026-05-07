@@ -25,12 +25,12 @@ if (ctx) {
                 {
                     label: 'Receitas',
                     data: [5000, 6000, 5500, 7000, 8000],
-                    backgroundColor: '#adebad'
+                    backgroundColor: '#e1ffe1'
                 },
                 {
                     label: 'Despesas',
                     data: [3000, 3500, 4000, 4500, 5000],
-                    backgroundColor: '#ffb3b3'
+                    backgroundColor: '#ffd1d1'
                 }
             ]
         },

@@ -46,12 +46,10 @@ button:hover {
 }
 
 aside {
+    background: #f5f5f5;
     width: 200px;
     height: 100vh;
-    background: #009900;
-    color: white;
-    font-weight: 600;
-    padding: 16px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -70,26 +68,36 @@ aside {
 }
 
 .opcoes {
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.222);
+    background: #f1f1f1;
+    height: 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     padding: 5px;
+    font-size: 16px;
     border-radius: 10px;
-    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .2s ease, box-shadow .2s ease;
 }
 
 .opcoes:hover {
-    background-color: #006f00;
     cursor: pointer;
-    transform: scale(1.1);
-}
-
-#toggle-theme {
-    align-self: flex-start;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 main {
     flex: 1;
     padding: 20px;
     min-width: 0;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 30px;
 }
 
 .cards {
@@ -112,10 +120,6 @@ main {
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-h2 {
-    font-size: 30px;
 }
 
 .saldo {
@@ -143,8 +147,7 @@ th, td {
 }
 
 th {
-    background: #333;
-    color: white;
+    background: #f1f1f1;
 }
 
 tr {
@@ -161,15 +164,27 @@ body.dark {
 }
 
 body.dark aside {
-    background: #1f7a1f;
+    background: #4c4c4c;
+}
+
+body.dark .opcoes {
+    background: #1e1e1e;
 }
 
 body.dark .card {
     background: #1e1e1e;
 }
 
+body.dark .receitas {
+    background: #9f0000;
+}
+
+body.dark .despesas {
+    background: #007834;
+}
+
 body.dark th {
-    background: #222;
+    background: #1e1e1e;
 }
 
 body.dark tr:hover {
